@@ -1,0 +1,67 @@
+.header{
+	grid-area: header;
+	background: #169b1e;
+	overflow: hidden;
+}
+.App_logo{
+	width: 85px;
+	animation: rot 5s infinite linear;
+	float: left;
+}
+
+@keyframes rot{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.RT{
+	color: #fff;
+	padding: 0;
+	float: left;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 24px;
+}
+.add_logo{
+	margin-left: 750px;
+}
+.add_logo div{
+	position: relative;
+	float: left;
+	padding: 20px;
+
+}
+.dop{
+	width: 15px;
+	height: 180px;
+	background: #fff;
+	transform: rotateZ(60deg);
+	margin-top: -80px;
+}
+.dop:nth-child(1){
+	background: #fff;
+ }
+.dop:nth-child(2){
+	background: #169b1e;
+}
+.dop:nth-child(3){
+	background: #fff;
+}
+.dop:nth-child(4){
+	background: #169b1e;
+}
+.dop:nth-child(5){
+	background: #fff;
+}
+.dop:nth-child(6){
+	background: #169b1e;
+}
+.RT {
+	font-family: Chiller;
+}
+
+

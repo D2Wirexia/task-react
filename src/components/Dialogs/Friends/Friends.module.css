@@ -1,0 +1,41 @@
+.dialog{
+	padding: 10px 10px 10px 10px;
+	border-bottom: 1px solid #b8b8b8;
+	margin: 10px 0px;
+	cursor: pointer;
+	transition: .1s linear;
+	position: relative;
+	width: 180px;
+	height: 50px;
+}
+.friendsDialog a{
+	text-decoration: none;
+	color: #000;
+	float: left;
+	padding-left: 10px;
+}
+.nameFriend{
+	position: relative;
+	left: 10px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.dialog:hover{
+	color: #c94d35;
+	transform: scale(1.2);
+	box-shadow: .5px .5px #000;
+	background: #fbfbfb;
+}
+
+.friendsDialog a:hover{
+	color: #c94d35;
+}
+.imgFriend img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.dialog:hover img{
+
+}

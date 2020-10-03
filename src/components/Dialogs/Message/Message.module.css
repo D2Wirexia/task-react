@@ -1,0 +1,15 @@
+.discussion {
+	padding: 10px;
+	border-radius: 12px;
+	border: 1px solid #cdcdcd;
+	margin: 10px;
+	width: 340px;
+
+	max-width: 500px;
+}
+
+.blockMessage{
+	position: relative;
+
+
+}

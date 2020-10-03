@@ -1,0 +1,59 @@
+*{
+
+}
+
+.item{
+	color: #252d75;
+	position: relative;
+	top: 100px;
+
+}
+.item .message, .item .photo{
+	display: inline-block;
+}
+.item img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.photo{
+
+}
+.message{
+	background: #fff;
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+	border: 3px solid #666;
+	border-radius: 10px;
+	margin-left: 15px;
+	top: -30px;
+	max-width: 700px;
+	min-width: 200px;
+}
+.like{
+	margin: -20px 0 20px 10px;
+}
+.like:hover{
+	cursor: pointer;
+}
+.message:before,
+.message:after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+.message:before{
+	left: 7px;
+	border-width: 15px 15px 0 0;
+	border-color: #666 transparent transparent transparent;
+}
+.message:after{
+	left: 12px;
+	border-width: 7px 7px 0 0;
+	border-color: #fff transparent transparent transparent;
+}
+

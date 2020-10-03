@@ -1,0 +1,45 @@
+.mainDialog{
+	display: grid;
+	grid-template-columns: 2fr 6fr;
+	grid-gap: 10px;
+}
+h3{
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-family: "Book Antiqua";
+	margin: 0;
+	position: relative;
+}
+button{
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+	transition: .1s linear;
+	background: #65aad9;
+	border: 1px solid #5285ad;
+	color: #fff;
+	margin: 20px 0 0 550px;
+}
+button:hover{
+	box-shadow: .5px .5px #000;
+	cursor: pointer;
+	background: #5285ad;
+	border: 1px solid #5f85ae;
+}
+textarea{
+	font-size: 18px;
+	max-height: 20px;
+	padding: 10px;
+	border-radius: 12px;
+	border: 1px solid #cdcdcd;
+	margin: 10px;
+	width: 500px;
+}
+.sms{
+	height: 80vh;
+	position: relative;
+}
+.dataEntry{
+	top: 90vh;
+	position: fixed;
+}

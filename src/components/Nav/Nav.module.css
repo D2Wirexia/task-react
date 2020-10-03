@@ -1,0 +1,60 @@
+.nav{
+	grid-area: nav;
+	background: linear-gradient(#169b1e, #188021);
+	width: 180px;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+}
+
+.post a.active{
+	text-decoration: underline;
+	color: #f7ed93;
+	transform: scale(1.1);
+
+}
+.nav div a{
+	text-decoration: none;
+	font-size: 19px;
+	position: relative;
+	top: 30px;
+	left: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+.nav div:nth-child(5){
+	padding-top: 20px;
+}
+.nav div:nth-child(6){
+	padding-top: 30px;
+	font-size: 26px;
+}
+.bestFriend{
+	position: relative;
+	left: 7px;
+	top: 40px;
+	font-size: 12px;
+	color: white;
+	float: left;
+	text-align: center;
+
+}
+.photo img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 7px;
+	margin-bottom: 3px;
+}
+.friend{
+	width: 55px;
+
+
+
+}
+.blockFriend{
+
+}
+.post i{
+	margin-right: 10px;
+}
