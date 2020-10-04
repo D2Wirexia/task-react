@@ -1,9 +1,7 @@
 import React from 'react';
 import universal from './Nav.module.css'
 import {NavLink} from "react-router-dom";
-import Friend from "./Friends/Fiend";
 import "../../css/all.min.css"
-import StateContext from "../../StateContext";
 
 const Nav = (props) => {
 	let friendsData = props.state.messangerPage.dialogData;
