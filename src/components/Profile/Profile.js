@@ -2,7 +2,7 @@ import React from "react";
 import universal from './Profile.module.css'
 import MyPostContainer from "./Posts/MyPostContainer";
 
-const Profile = (props) => {
+const Profile = () => {
 
 	return(
 		 <div className={universal.content}>
@@ -18,7 +18,7 @@ const Profile = (props) => {
 					 </ul>
 				 </div>
 			 </div>
-			 <MyPostContainer store={props.store} />
+			 <MyPostContainer />
 		 </div>
 	);
 };

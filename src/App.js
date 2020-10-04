@@ -16,10 +16,10 @@ const App = (props) => {
 
           <div className="app-writer">
              <Header/>
-             <Nav sideBar={props.state.sideBar}/>
+             <Nav state={props.state}/>
              <div className="app_content">
-                <Route path="/profile" render={() => <Profile store={props.store}/>}/>
-                <Route path="/dialogs" render={() => <DialogsContainer store={props.store}/>} />
+                <Route path="/profile" render={() => <Profile />}/>
+                <Route path="/dialogs" render={() => <DialogsContainer />} />
                 <Route path="/news" component={News}/>
                 <Route path="/music" component={Music}/>
                 <Route path="/settings" component={Settings}/>
