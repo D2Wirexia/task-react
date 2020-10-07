@@ -1,9 +1,14 @@
 img{
 	width: 100px;
+	height: 110px;
 }
 span{
 	font-size: 28px;
+	margin: 5px 0 0 30px;
 	font-family: "Arial Unicode MS";
+	border-bottom: 1px dashed #d0d0d0;
+	width: 80%;
+	display: flex;
 }
 .user{
 	position: relative;
@@ -26,6 +31,8 @@ span{
 	background: #65aad9;
 	border: 1px solid #5285ad;
 	color: #fff;
+	position: absolute;
+	bottom: 0;
 }
 .btn:hover{
 	box-shadow: .5px .5px #000;
