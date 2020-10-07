@@ -15,8 +15,12 @@ let mapDispatchToProps = (dispatch) => {
 		updateNewMessageText: (text) => {
 			dispatch(updateNewMessageTextCreator(text));
 		},
-		addMessage: () => {
-			dispatch(addMessageCreator());
+		addMessage: (text) => {
+			if(text.length == 0){
+				return 0;
+			}else {
+				dispatch(addMessageCreator());
+			}
 		}
 	}
 };

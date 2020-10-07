@@ -38,8 +38,9 @@ button.send:hover{
 .block{
 	float: left;
 }
+.send:focus{
+	display: none;
+}
 .block textarea, .block button{
-
-
 }
 

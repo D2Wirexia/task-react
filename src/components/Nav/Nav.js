@@ -37,7 +37,7 @@ const Nav = (props) => {
 									  <i className="fas fa-tools"></i>Settings</NavLink>
 							  </div>
 							  <div className={universal.post}>
-								  <NavLink to="/friends" activeClassName={universal.active}>
+								  <NavLink to="/users" activeClassName={universal.active}>
 									  <i className="fas fa-users"></i>Friends</NavLink>
 							  </div>
 

@@ -10,7 +10,7 @@ h3{
 	margin: 0;
 	position: relative;
 }
-button{
+.send{
 	width: 100px;
 	height: 30px;
 	border-radius: 20px;
@@ -20,11 +20,14 @@ button{
 	color: #fff;
 	margin: 20px 0 0 550px;
 }
-button:hover{
+.send:hover{
 	box-shadow: .5px .5px #000;
 	cursor: pointer;
 	background: #5285ad;
 	border: 1px solid #5f85ae;
+}
+.send:focus{
+	display: none;
 }
 textarea{
 	font-size: 18px;

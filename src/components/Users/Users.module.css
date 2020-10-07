@@ -1,0 +1,72 @@
+img{
+	width: 100px;
+}
+span{
+	font-size: 28px;
+	font-family: "Arial Unicode MS";
+}
+.user{
+	position: relative;
+	margin: 20px 0 20px 30px;
+	width: 100%;
+}
+
+.location{
+	width: 80%;
+	height: 150px;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	margin-left: 110px;
+}
+.btn {
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+	transition: .1s linear;
+	background: #65aad9;
+	border: 1px solid #5285ad;
+	color: #fff;
+}
+.btn:hover{
+	box-shadow: .5px .5px #000;
+	cursor: pointer;
+	background: #5285ad;
+	border: 1px solid #5f85ae;
+}
+.btn:focus{
+	display: none;
+}
+.info{
+	float: left;
+}
+.name{
+	font-family: "Book Antiqua";
+	font-size: 22px;
+	position: absolute;
+	padding: 15px 0 0 20px;
+}
+.status{
+	position: absolute;
+	font-size: 18px;
+	font-family: monospace;
+	color: #797979;
+	padding: 0 0 10px 20px;
+	bottom: 0;
+}
+.rightBlock{
+
+}
+.country{
+	position: absolute;
+	font-size: 28px;
+	font-family: Cambria;
+	color: #4f4f4f;
+	padding: 15px 20px 0 65%;
+
+}
+.city{
+	position: absolute;
+	font-size: 20px;
+	bottom: 0;
+	padding: 0 20px 20px 70%;
+}

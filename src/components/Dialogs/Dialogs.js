@@ -10,8 +10,10 @@ const Dialogs = (props) => {
 
 	let newMessageElement = React.createRef();
 
+
 	let addMassageElement = () => {
-		props.addMessage();
+		let text = newMessageElement.current.value;
+		props.addMessage(text);
 	};
 	let onMessageChange = () => {
 		let text = newMessageElement.current.value;
@@ -33,7 +35,7 @@ const Dialogs = (props) => {
 									  placeholder={"Message..."}
 									  onChange={onMessageChange}
 									  value={props.newTextMessage} />
-						 <button onClick={addMassageElement}>Send</button>
+						 <button onClick={addMassageElement} className={universal.send}>Send</button>
 					 </div>
 				 </div>
 			 </div>

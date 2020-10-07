@@ -22,6 +22,32 @@ let hello = (name) => {
 
 	return person;
 };
-hello("");
-console.log(person);
+hello("V");
+//console.log(person);
+
+var a = {
+	name: 'Wirexia',
+	age: 18,
+	friends: ['Misha', 'Oleg', 'Nika', 'Nastya'],
+	isOnline: true,
+	classroom: {
+		teacher: {
+			name: 'Dimuch',
+			age: 27
+		}
+	}
+};
+
+var b = {...a};
+
+b.name = 'Dima';
+b.isOnline = false;
+b.friends = [...a.friends];
+b.friends.push('Vika');
+b.classroom.teacher.name = "Wirexia";
+
+
+console.group("test:");
+console.log(a);
+console.log(b);
 

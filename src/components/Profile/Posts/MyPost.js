@@ -11,13 +11,7 @@ const MyPost = (props) => {
 	let placeholderText = 'Enter to share news...';
 	let addPostElement = () => {
 		let text = newPostElement.current.value;
-		if(text.length == 0) {
-			alert("Вы ничего не написали")
-		}else if (text.length > 5000){
-			alert("Макс. симолов 5000");
-		}else{
 			props.addPost(text);
-		}
 	};
 
 	let onPostChange = () => {
