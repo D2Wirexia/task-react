@@ -2,7 +2,6 @@ import React from 'react';
 import universal from './Dialogs.module.css';
 import Friends from "./Friends/Friends";
 import Message from "./Message/Message";
-import {addMessageCreator, updateNewMessageTextCreator} from "../../redux/messageReducer";
 
 const Dialogs = (props) => {
 

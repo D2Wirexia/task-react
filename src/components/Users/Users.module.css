@@ -2,18 +2,27 @@ img{
 	width: 100px;
 	height: 110px;
 }
-span{
+.getUser{
 	font-size: 28px;
 	margin: 5px 0 0 30px;
 	font-family: "Arial Unicode MS";
-	border-bottom: 1px dashed #d0d0d0;
-	width: 80%;
-	display: flex;
+	border: none;
+	background: none;
+	border-bottom: 2px dashed #d0d0d0;
+	transition: .1s linear;
+	animation-name: userAnim;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
+
+
 .user{
 	position: relative;
 	margin: 20px 0 20px 30px;
+	max-width: 800px;
 	width: 100%;
+	min-width: 600px;
 }
 
 .location{
@@ -61,19 +70,39 @@ span{
 	bottom: 0;
 }
 .rightBlock{
-
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 500px;
+	margin: 20px 0 0 0;
 }
 .country{
 	position: absolute;
 	font-size: 28px;
 	font-family: Cambria;
 	color: #4f4f4f;
-	padding: 15px 20px 0 65%;
+
 
 }
 .city{
 	position: absolute;
 	font-size: 20px;
-	bottom: 0;
-	padding: 0 20px 20px 70%;
+	margin: 80px 0 20px 0;
+}
+.pagination{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.pagination span{
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+	background: #000;
+	color: #fff;
+	padding: 7px;
+}
+span.selectedPage{
+	font-weight: bold;
+	background: #75ad47;
+
 }
