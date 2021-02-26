@@ -2,6 +2,7 @@
 	grid-area: header;
 	background: #169b1e;
 	overflow: hidden;
+	position: relative;
 }
 .App_logo{
 	width: 85px;
@@ -28,7 +29,7 @@
 	font-size: 24px;
 }
 .add_logo{
-	margin-left: 750px;
+	margin-left: 700px;
 }
 .add_logo div{
 	position: relative;
@@ -42,6 +43,7 @@
 	background: #fff;
 	transform: rotateZ(60deg);
 	margin-top: -80px;
+	position: absolute;
 }
 .dop:nth-child(1){
 	background: #fff;
@@ -64,5 +66,26 @@
 .RT {
 	font-family: Chiller;
 }
+.login{
+	position: absolute;
+	z-index: 3;
+	right: 30px;
+	color: #fff;
+	transition: all .2s linear;
+	top: 15px;
+	font-size: 22px;
+}
+.login div i{
+	margin-left: 10px;
+	transition: all .2s linear;
+}
 
+.login div i:hover{
+	color: black;
+	cursor: pointer;
+}
+.login a{
+	text-decoration: none;
+	color: #e7e7e7;
+}
 

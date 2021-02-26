@@ -5,6 +5,7 @@
 	margin: 10px;
 	width: 340px;
 
+	word-wrap: break-word;
 	max-width: 500px;
 }
 

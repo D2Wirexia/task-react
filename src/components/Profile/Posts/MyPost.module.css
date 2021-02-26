@@ -6,28 +6,28 @@
 	padding: 10px 0 15px 15px;
 	font-family: Bahnschrift;
 }
-textarea{
-	width: 100%;
-	border: none;
-	border-bottom: 1px solid #000;
-	font-size: 18px;
-	min-height: 20px;
-	position: absolute;
-}
 .textPost{
-	width: 700px;
+
 }
+.block  textarea{
+	border: none;
+	width: 740px;
+	border-bottom: 1px solid #000;
+	border-radius: 12px;
+	font-size: 18px;
+	max-height: 40px;
+	white-space: pre-wrap;
+}
+
 button.send{
 	width: 150px;
 	height: 40px;
 	border-radius: 20px;
-	margin: 11px 0 0 750px;
+	margin-left: 10px;
 	transition: .1s linear;
 	background: #65aad9;
 	border: 1px solid #5285ad;
 	color: #fff;
-	position: absolute;
-
 }
 button.send:hover{
 	box-shadow: .5px .5px #000;
@@ -35,12 +35,15 @@ button.send:hover{
 	background: #5285ad;
 	border: 1px solid #5f85ae;
 }
-.block{
-	float: left;
-}
-.send:focus{
-	display: none;
+.block form{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
 }
 .block textarea, .block button{
+}
+.simplePost{
+	margin-top: 50px;
 }
 

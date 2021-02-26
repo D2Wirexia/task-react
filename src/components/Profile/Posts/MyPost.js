@@ -1,36 +1,43 @@
 import React from "react";
 import universal from './MyPost.module.css'
 import SimplePost from "./SimplePost/SimplePost";
+import {Field, reduxForm} from "redux-form";
+import {maxLengthCreator, minLengthCreator, required} from "../../../utils/validators/validators";
+import {Textarea} from "../../common/formControls/formControls";
 
-const MyPost = (props) => {
+const maxLength500 = maxLengthCreator(500);
+const minLength2 = minLengthCreator(2);
 
-	let postElement =
-		 props.postData.map(post => <SimplePost message={post.message} like={post.like} addLike={props.addCountLike}/>);
+const MyPost = React.memo(props => {
 
-	let newPostElement = React.createRef();
-	let placeholderText = 'Enter to share news...';
-	let addPostElement = () => {
-		let text = newPostElement.current.value;
-			props.addPost(text);
+	const onSubmit = (values) => {
+		props.addPost(values.newPostBody);
 	};
-
-	let onPostChange = () => {
-		let text = newPostElement.current.value;
-		props.updateNewPostText(text);
-	};
-
 	return(
 		 <div className={universal.MyPost}>
 			 <div className={universal.post}>My Post</div>
 			 <div className={universal.block}>
-				 <textarea ref={newPostElement} className={universal.textPost} placeholder={placeholderText}
-							  value={props.newTextPost} onChange={onPostChange} />
-				 <button onClick={addPostElement} className={universal.send}>Add post</button>
+				 <PostReduxForm onSubmit={onSubmit}/>
 			 </div>
-				 {postElement}
-
+			 <div className={universal.simplePost}>
+				 <SimplePost postData={props.postData} addLike={props.addLike}
+								 pushIdLikes={props.pushIdLikes} isShowIdLike={props.isShowIdLike}/>
+			 </div>
 		 </div>
 	);
-}
+});
+const PostForm = (props) => {
+	return(
+		 <form onSubmit={props.handleSubmit}>
+			 <Field className={universal.textPost}
+					  placeholder={"Enter to share news..."} name="newPostBody"
+					  component={Textarea}
+					  validate={[required, maxLength500, minLength2]}/>
+			 <button className={universal.send}>Add post</button>
+		 </form>
+	)
+};
+
+const PostReduxForm = reduxForm({form: 'post'})(PostForm);
 
 export default MyPost;

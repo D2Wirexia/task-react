@@ -1,29 +1,3 @@
-let person = {
-	name: null,
-	age: null,
-	say: undefined,
-	getAge(age){this.age = age},
-	getName(name){this.name = name},
-	getHi(){this.say = `Hi, ` + this.name}
-};
-
-let hello = (name) => {
-	person.getName(name);
-	person.getHi();
-	switch (name[0]) {
-		case 'A': age = 10; break;
-		case 'V': age = 20; break;
-		case 'N': age = 30; break;
-		case 'O': age = 40; break;
-		case 'D': age = 50; break;
-		default: null;
-	}
-	person.getAge(age);
-
-	return person;
-};
-hello("V");
-//console.log(person);
 
 var a = {
 	name: 'Wirexia',
@@ -51,3 +25,54 @@ console.group("test:");
 console.log(a);
 console.log(b);
 
+let arr = ["a", "b", "c", "d", "e", 7];
+
+arr.forEach((iter, i) => {
+	console.log(i + " . " + iter);
+});
+
+let arrFilter = arr.filter(num => num === 'b');
+console.log(arrFilter);
+
+let arrMap = arr.map(n => n+2);
+console.log(arrMap);
+
+const arr1 = [1, 2, 3, 4, 5, 15, 2];
+let result = arr1.reduce((num, current, index, arr) => num + current, arr1.length);
+console.log( result ); // 32 + 6
+
+
+const arr3 = [ 1, 2, 3, 4, 5 ];
+function getSums (arr){
+	let mewAr = [];
+	mewAr.push(arr.reduce((num, current) => {
+		mewAr.push(num);
+		return num+current;
+	}));
+	return mewAr;
+};
+console.log(getSums(arr3));
+
+/*
+Написать функцию, которая эмитирует округление лайков для ютуба. Пример:
+26 456 = 26 ТЫС
+1 532 - 1,5 ТЫС
+2 435 235 = 2,4 М
+853 = 853
+*/
+const funcImitationCountLikes = like => {
+
+};
+console.log(funcImitationCountLikes(543)); //543
+console.log(funcImitationCountLikes(18460)); //18 ТЫС
+console.log(funcImitationCountLikes(7632091)); //7,6 М
+console.log(funcImitationCountLikes(1672)); //1,6 ТЫС
+console.log(funcImitationCountLikes(10562711)); //10 М
+/*
+Улучшить функцию до округнеия в большую или меньшую сторону 3го знака слева
+console.log(funcImitationCountLikes(543)); //543
+console.log(funcImitationCountLikes(13660)); //13,7 ТЫС
+console.log(funcImitationCountLikes(1890317)); //1,9 М
+console.log(funcImitationCountLikes(1672)); //1,7 ТЫС
+console.log(funcImitationCountLikes(10562711)); //10,6 М
+ */

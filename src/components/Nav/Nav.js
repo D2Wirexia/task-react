@@ -3,7 +3,7 @@ import universal from './Nav.module.css'
 import {NavLink} from "react-router-dom";
 import "../../css/all.min.css"
 
-const Nav = (props) => {
+const Nav = React.memo(props => {
 	let friendsData = props.state.sideBar.friends;
 
 					 /*let friendsData = store.getState().sideBar.friends.map(x => {
@@ -35,7 +35,7 @@ const Nav = (props) => {
 							  </div>
 							  <div className={universal.post}>
 								  <NavLink to="/users" activeClassName={universal.active}>
-									  <i className="fas fa-users"></i>Friends</NavLink>
+									  <i className="fas fa-users"></i>Users</NavLink>
 							  </div>
 
 
@@ -57,5 +57,5 @@ const Nav = (props) => {
 
 						  </nav>
 	);
-}
+});
 export default Nav;

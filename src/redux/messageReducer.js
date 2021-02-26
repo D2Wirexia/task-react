@@ -8,7 +8,6 @@ let initialState = {
 		{id: 3, message: 'It\'s OK!'},
 		{id: 4, message: 'I want see u again'},
 	],
-	newTextMessage: '',
 	dialogData: [
 		{id: 1, name: 'Vladimir Zelensky',
 			photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Volodymyr_Zelensky_Official_portrait_%28cropped%29.jpg/248px-Volodymyr_Zelensky_Official_portrait_%28cropped%29.jpg',
@@ -29,28 +28,17 @@ const messageReducer = (state = initialState, action) => {
 		case ADD_MESSAGE:
 			return  {
 				...state,
-				newTextMessage: '',
-				messageData: [...state.messageData, {id: 5,message: state.newTextMessage}]
-			};
-		case UPDATE_NEW_MESSAGE_TEXT:
-			return  {
-				...state,
-				newTextMessage: action.newTextMessageElement,
+				messageData: [...state.messageData, {id: 5, message: action.text}]
 			};
 		default:
 			return state;
 	}
 };
-export const addMessageCreator = () => {
+export const addMessage = (text) => {
 	return{
-		type: ADD_MESSAGE,
+		type: ADD_MESSAGE, text
 	}
 };
-export const updateNewMessageTextCreator = (text) => {
-	return{
-		type: UPDATE_NEW_MESSAGE_TEXT,
-		newTextMessageElement: text
-	}
-};
+
 
 export default messageReducer;

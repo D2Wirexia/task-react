@@ -2,7 +2,8 @@
 	grid-area: nav;
 	background: linear-gradient(#169b1e, #188021);
 	width: 180px;
-	height: 100vh;
+	min-height: calc(100vh - 70px);
+	height: 100%;
 	position: sticky;
 	top: 0;
 }
